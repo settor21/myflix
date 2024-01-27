@@ -26,7 +26,16 @@ Another VM instance was created to setup databases for use in the applications (
  - For **polyglot persistence**
  - Postgresql for user and session info (salted using bcrypt) - /postgresql branch
  - MongoDB for Metadata (User clicks, user plays) - /mongoDB branch
- * Dockerized versions were deployed to handle requests. A 100GB disk was mounted to ensure persistence of data
+* Dockerized versions were deployed to handle requests. A 100GB disk was mounted to ensure persistence of data irrespective of the container
 
-Stripe payment test page was used during signup to allow users to pay £5 monthly. 
+The metadata was then processed by Neo4J, with additional hooks to Tensorflow and the results sent back to mongoDB
+(https://github.com/settor21/myflix_recommendedVideos/   )
+ 
+Stripe payment test page was used during signup to allow users to pay £5 monthly.
+
+The movies were uploaded with metadata to GCP bucket using a movie upload microservice, 
+running locally to optimse processing of large movie files (4K, 1080p @ 1GB+)
+(https://github.com/settor21/myFlix_movieUpload)
+
+
 

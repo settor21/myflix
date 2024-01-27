@@ -1,4 +1,5 @@
 # myflix
+Netflix Clone
 Project for DevOps and Microservices course (Msc. Data Sci. and Eng., UoDundee)
 
 Design
@@ -36,6 +37,8 @@ Stripe payment test page was used during signup to allow users to pay £5 monthl
 The movies were uploaded with metadata to GCP bucket using a movie upload microservice, 
 running locally to optimse processing of large movie files (4K, 1080p @ 1GB+)
 (https://github.com/settor21/myFlix_movieUpload)
+
+SonarQube and Trivy were implemented on all VMs for security and AppArmor on production for docker container security 
 
 
 

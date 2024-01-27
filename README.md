@@ -1,5 +1,5 @@
 # myflix
-Project for DevOps and Microservices course @UoDundee
+Project for DevOps and Microservices course (Msc. Data Sci. and Eng., UoDundee)
 
 Design
 DevOps Pipeline

@@ -1,6 +1,6 @@
 # myflix
-Netflix Clone
-Project for DevOps and Microservices course (Msc. Data Sci. and Eng., UoDundee)
+Netflix Clone deployed on Google Cloud
+
 
 Design
 DevOps Pipeline
